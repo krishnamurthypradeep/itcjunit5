@@ -1,0 +1,268 @@
+!SESSION 2020-11-20 13:58:30.133 -----------------------------------------------
+eclipse.buildId=4.8.0.202009151856-RELEASE
+java.version=14.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4 -product org.springframework.boot.ide.branding.sts4 -keyring /Users/pradeep/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.springframework.boot.ide.branding.sts4 -data /Users/pradeep/Documents/workspace/2020/november/itcjunit -product org.springframework.boot.ide.branding.sts4 -keyring /Users/pradeep/.eclipse_keyring
+
+!ENTRY org.eclipse.m2e.logback.configuration 2 0 2020-11-20 13:58:48.883
+!MESSAGE Exception while setting up logging:BundleContext is no longer valid org.eclipse.m2e.logback.configuration_1.16.0.20200318-1040 [390]
+!STACK 0
+java.lang.IllegalStateException: BundleContext is no longer valid org.eclipse.m2e.logback.configuration_1.16.0.20200318-1040 [390]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.checkValid(BundleContextImpl.java:1027)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.getBundle(BundleContextImpl.java:164)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.configureLogback(LogPlugin.java:118)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.access$2(LogPlugin.java:109)
+	at org.eclipse.m2e.logback.configuration.LogPlugin$1.run(LogPlugin.java:64)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2020-11-20 13:58:49.904
+!MESSAGE Unable to load resource platform:/plugin/org.eclipse.platform/LegacyIDE.e4xmi
+!STACK 0
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl$1DiagnosticWrappedException: java.io.IOException: Unable to resolve plug-in "org.eclipse.platform".
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.handleDemandLoadException(ResourceSetImpl.java:319)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:278)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.getResource(ResourceSetImpl.java:406)
+	at org.eclipse.e4.ui.internal.workbench.ResourceHandler.getResource(ResourceHandler.java:287)
+	at org.eclipse.e4.ui.internal.workbench.ResourceHandler.loadResource(ResourceHandler.java:263)
+	at org.eclipse.e4.ui.internal.workbench.ResourceHandler.loadMostRecentModel(ResourceHandler.java:181)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.loadApplicationModel(E4Application.java:384)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:260)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:573)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+Caused by: java.io.IOException: Unable to resolve plug-in "org.eclipse.platform".
+	at org.eclipse.core.internal.runtime.PlatformURLPluginConnection.parse(PlatformURLPluginConnection.java:64)
+	at org.eclipse.core.internal.runtime.PlatformURLPluginConnection.resolve(PlatformURLPluginConnection.java:73)
+	at org.eclipse.core.internal.boot.PlatformURLHandler.openConnection(PlatformURLHandler.java:69)
+	at org.eclipse.osgi.internal.url.URLStreamHandlerProxy.openConnection(URLStreamHandlerProxy.java:123)
+	at java.base/java.net.URL.openConnection(URL.java:1101)
+	at org.eclipse.emf.ecore.resource.impl.URIHandlerImpl.createInputStream(URIHandlerImpl.java:200)
+	at org.eclipse.emf.ecore.resource.impl.ExtensibleURIConverterImpl.createInputStream(ExtensibleURIConverterImpl.java:358)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1314)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoad(ResourceSetImpl.java:259)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:274)
+	... 23 more
+
+!ENTRY org.eclipse.tm.terminal.connector.process 2 0 2020-11-20 13:58:58.095
+!MESSAGE Could not resolve module: org.eclipse.tm.terminal.connector.process [473]
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.core; bundle-version="5.6.0"; resolution:="optional"
+
+
+!ENTRY org.eclipse.tm.terminal.connector.local 2 0 2020-11-20 13:58:58.097
+!MESSAGE Could not resolve module: org.eclipse.tm.terminal.connector.local [472]
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.core; bundle-version="5.6.0"; resolution:="optional"
+
+
+!ENTRY org.eclipse.jetty.http 2 0 2020-11-20 13:58:58.099
+!MESSAGE Could not resolve module: org.eclipse.jetty.http [264]
+  Unresolved requirement: Require-Capability: osgi.extender; filter:="(osgi.extender=osgi.serviceloader.processor)"; resolution:="optional"
+  Unresolved requirement: Require-Capability: osgi.extender; filter:="(osgi.extender=osgi.serviceloader.registrar)"; resolution:="optional"
+
+
+!ENTRY com.vmware.vfabric.ide.eclipse.tcserver.livegraph 2 0 2020-11-20 13:58:58.100
+!MESSAGE Could not resolve module: com.vmware.vfabric.ide.eclipse.tcserver.livegraph [723]
+  Unresolved requirement: Require-Bundle: org.springframework.ide.eclipse.beans.ui.livegraph; bundle-version="3.1.0"; resolution:="optional"
+
+
+!ENTRY org.eclipse.jetty.xml 2 0 2020-11-20 13:58:58.102
+!MESSAGE Could not resolve module: org.eclipse.jetty.xml [271]
+  Unresolved requirement: Require-Capability: osgi.serviceloader; filter:="(osgi.serviceloader=org.eclipse.jetty.xml.ConfigurationProcessorFactory)"; resolution:="optional"; cardinality:="multiple"
+  Unresolved requirement: Require-Capability: osgi.extender; filter:="(osgi.extender=osgi.serviceloader.processor)"; resolution:="optional"
+
+
+!ENTRY org.eclipse.jetty.server 2 0 2020-11-20 13:58:58.104
+!MESSAGE Could not resolve module: org.eclipse.jetty.server [267]
+  Unresolved requirement: Import-Package: org.eclipse.jetty.jmx; version="[9.4.31,10.0.0)"; resolution:="optional"
+
+
+!ENTRY ch.qos.logback.classic 2 0 2020-11-20 13:58:58.105
+!MESSAGE Could not resolve module: ch.qos.logback.classic [3]
+  Unresolved requirement: Import-Package: org.codehaus.groovy.control; version="[2.4.0,3.0.0)"; resolution:="optional"
+  Unresolved requirement: Import-Package: org.codehaus.groovy.control.customizers; version="[2.4.0,3.0.0)"; resolution:="optional"
+  Unresolved requirement: Import-Package: org.codehaus.groovy.reflection; version="[2.4.0,3.0.0)"; resolution:="optional"
+  Unresolved requirement: Import-Package: org.codehaus.groovy.runtime; version="[2.4.0,3.0.0)"; resolution:="optional"
+  Unresolved requirement: Import-Package: org.codehaus.groovy.runtime.callsite; version="[2.4.0,3.0.0)"; resolution:="optional"
+  Unresolved requirement: Import-Package: org.codehaus.groovy.runtime.typehandling; version="[2.4.0,3.0.0)"; resolution:="optional"
+  Unresolved requirement: Import-Package: org.codehaus.groovy.runtime.wrappers; version="[2.4.0,3.0.0)"; resolution:="optional"
+  Unresolved requirement: Import-Package: org.codehaus.groovy.transform; version="[2.4.0,3.0.0)"; resolution:="optional"
+
+
+!ENTRY org.eclipse.jetty.security 2 0 2020-11-20 13:58:58.107
+!MESSAGE Could not resolve module: org.eclipse.jetty.security [266]
+  Unresolved requirement: Require-Capability: osgi.serviceloader; filter:="(osgi.serviceloader=org.eclipse.jetty.security.Authenticator$Factory)"; resolution:="optional"; cardinality:="multiple"
+  Unresolved requirement: Require-Capability: osgi.extender; filter:="(osgi.extender=osgi.serviceloader.processor)"; resolution:="optional"
+
+
+!ENTRY io.projectreactor.reactor-core 2 0 2020-11-20 13:58:58.109
+!MESSAGE Could not resolve module: io.projectreactor.reactor-core [40]
+  Unresolved requirement: Import-Package: io.micrometer.core.instrument; resolution:="optional"
+  Unresolved requirement: Import-Package: io.micrometer.core.instrument.binder.jvm; resolution:="optional"
+  Unresolved requirement: Import-Package: io.micrometer.core.instrument.composite; resolution:="optional"
+  Unresolved requirement: Import-Package: io.micrometer.core.instrument.search; resolution:="optional"
+  Unresolved requirement: Import-Package: javax.annotation.meta; resolution:="optional"
+  Unresolved requirement: Import-Package: kotlin; resolution:="optional"
+  Unresolved requirement: Import-Package: kotlin.collections; resolution:="optional"
+  Unresolved requirement: Import-Package: kotlin.jvm; resolution:="optional"
+  Unresolved requirement: Import-Package: kotlin.jvm.functions; resolution:="optional"
+  Unresolved requirement: Import-Package: kotlin.jvm.internal; resolution:="optional"
+  Unresolved requirement: Import-Package: kotlin.jvm.internal.markers; resolution:="optional"
+  Unresolved requirement: Import-Package: kotlin.reflect; resolution:="optional"
+  Unresolved requirement: Import-Package: kotlin.sequences; resolution:="optional"
+  Unresolved requirement: Import-Package: reactor.blockhound; resolution:="optional"
+  Unresolved requirement: Import-Package: reactor.blockhound.integration; resolution:="optional"
+
+
+!ENTRY org.apache.sshd.osgi 2 0 2020-11-20 13:58:58.111
+!MESSAGE Could not resolve module: org.apache.sshd.osgi [88]
+  Unresolved requirement: Import-Package: org.apache.tomcat.jni; version="5.5.0"; resolution:="optional"
+
+
+!ENTRY org.eclipse.releng.tests 2 0 2020-11-20 13:58:58.112
+!MESSAGE Could not resolve module: org.eclipse.releng.tests [829]
+  Unresolved requirement: Require-Bundle: org.eclipse.jgit; bundle-version="[3.0.0,4.0.0)"; resolution:="optional"
+  Unresolved requirement: Require-Bundle: org.eclipse.egit.core; bundle-version="[3.0.0,4.0.0)"; resolution:="optional"
+
+
+!ENTRY org.eclipse.jetty.util 2 0 2020-11-20 13:58:58.116
+!MESSAGE Could not resolve module: org.eclipse.jetty.util [269]
+  Unresolved requirement: Require-Capability: osgi.serviceloader; filter:="(osgi.serviceloader=org.eclipse.jetty.util.security.CredentialProvider)"; resolution:="optional"; cardinality:="multiple"
+  Unresolved requirement: Require-Capability: osgi.extender; filter:="(osgi.extender=osgi.serviceloader.processor)"; resolution:="optional"
+
+
+!ENTRY org.springframework.ide.eclipse.boot.wizard 2 0 2020-11-20 13:58:58.119
+!MESSAGE Could not resolve module: org.springframework.ide.eclipse.boot.wizard [661]
+  Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.browser; bundle-version="[3.5.0,4.0.0)"; resolution:="optional"
+
+
+!ENTRY org.eclipse.jetty.servlet 2 0 2020-11-20 13:58:58.120
+!MESSAGE Could not resolve module: org.eclipse.jetty.servlet [268]
+  Unresolved requirement: Import-Package: org.eclipse.jetty.jmx; version="[9.4.31,10.0.0)"; resolution:="optional"
+
+
+!ENTRY org.eclipse.osgi 4 0 2020-11-20 13:58:58.122
+!MESSAGE Application error
+!STACK 1
+java.lang.NullPointerException
+	at org.eclipse.e4.ui.internal.workbench.ResourceHandler.loadMostRecentModel(ResourceHandler.java:182)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.loadApplicationModel(E4Application.java:384)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:260)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:573)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+!SESSION 2020-11-20 14:24:50.112 -----------------------------------------------
+eclipse.buildId=4.8.0.202009151856-RELEASE
+java.version=14.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4 -keyring /Users/pradeep/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.springframework.boot.ide.branding.sts4 -keyring /Users/pradeep/.eclipse_keyring
+
+!ENTRY org.eclipse.m2e.logback.configuration 2 0 2020-11-20 14:25:15.257
+!MESSAGE Exception while setting up logging:BundleContext is no longer valid org.eclipse.m2e.logback.configuration_1.16.0.20200318-1040 [390]
+!STACK 0
+java.lang.IllegalStateException: BundleContext is no longer valid org.eclipse.m2e.logback.configuration_1.16.0.20200318-1040 [390]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.checkValid(BundleContextImpl.java:1027)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.getBundle(BundleContextImpl.java:164)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.configureLogback(LogPlugin.java:118)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.access$2(LogPlugin.java:109)
+	at org.eclipse.m2e.logback.configuration.LogPlugin$1.run(LogPlugin.java:64)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2020-11-20 14:25:16.344
+!MESSAGE Unable to load resource platform:/plugin/org.eclipse.platform/LegacyIDE.e4xmi
+!STACK 0
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl$1DiagnosticWrappedException: java.io.IOException: Unable to resolve plug-in "org.eclipse.platform".
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.handleDemandLoadException(ResourceSetImpl.java:319)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:278)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.getResource(ResourceSetImpl.java:406)
+	at org.eclipse.e4.ui.internal.workbench.ResourceHandler.getResource(ResourceHandler.java:287)
+	at org.eclipse.e4.ui.internal.workbench.ResourceHandler.loadResource(ResourceHandler.java:263)
+	at org.eclipse.e4.ui.internal.workbench.ResourceHandler.loadMostRecentModel(ResourceHandler.java:181)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.loadApplicationModel(E4Application.java:384)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:260)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:573)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+Caused by: java.io.IOException: Unable to resolve plug-in "org.eclipse.platform".
+	at org.eclipse.core.internal.runtime.PlatformURLPluginConnection.parse(PlatformURLPluginConnection.java:64)
+	at org.eclipse.core.internal.runtime.PlatformURLPluginConnection.resolve(PlatformURLPluginConnection.java:73)
+	at org.eclipse.core.internal.boot.PlatformURLHandler.openConnection(PlatformURLHandler.java:69)
+	at org.eclipse.osgi.internal.url.URLStreamHandlerProxy.openConnection(URLStreamHandlerProxy.java:123)
+	at java.base/java.net.URL.openConnection(URL.java:1101)
+	at org.eclipse.emf.ecore.resource.impl.URIHandlerImpl.createInputStream(URIHandlerImpl.java:200)
+	at org.eclipse.emf.ecore.resource.impl.ExtensibleURIConverterImpl.createInputStream(ExtensibleURIConverterImpl.java:358)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1314)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoad(ResourceSetImpl.java:259)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:274)
+	... 23 more
+
+!ENTRY org.eclipse.osgi 4 0 2020-11-20 14:25:21.211
+!MESSAGE Application error
+!STACK 1
+java.lang.NullPointerException
+	at org.eclipse.e4.ui.internal.workbench.ResourceHandler.loadMostRecentModel(ResourceHandler.java:182)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.loadApplicationModel(E4Application.java:384)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:260)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:573)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
